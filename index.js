@@ -85,6 +85,8 @@ app.get('/books', async (req, res)=>{
         }
     }
     catch(error){
+        console.log(error);
+        
         res.status(500).json({error: "an error occurred while retreiving books"})
     }
     
